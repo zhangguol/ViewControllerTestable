@@ -10,6 +10,10 @@
 		B229EB9D1E77D0670086600E /* ViewControllerTestable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B229EB931E77D0670086600E /* ViewControllerTestable.framework */; };
 		B229EBA21E77D0670086600E /* ViewControllerTestableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B229EBA11E77D0670086600E /* ViewControllerTestableTests.swift */; };
 		B229EBA41E77D0670086600E /* ViewControllerTestable.h in Headers */ = {isa = PBXBuildFile; fileRef = B229EB961E77D0670086600E /* ViewControllerTestable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B229EBAE1E77D08F0086600E /* ViewControllerPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B229EBAD1E77D08F0086600E /* ViewControllerPresentable.swift */; };
+		B229EBB01E77D1720086600E /* ViewControllerDismissable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B229EBAF1E77D1720086600E /* ViewControllerDismissable.swift */; };
+		B229EBB21E77D2370086600E /* ViewControllerPushable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B229EBB11E77D2370086600E /* ViewControllerPushable.swift */; };
+		B229EBB51E77D30A0086600E /* ViewControllerTestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B229EBB41E77D30A0086600E /* ViewControllerTestable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		B229EB9C1E77D0670086600E /* ViewControllerTestableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerTestableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B229EBA11E77D0670086600E /* ViewControllerTestableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTestableTests.swift; sourceTree = "<group>"; };
 		B229EBA31E77D0670086600E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B229EBAD1E77D08F0086600E /* ViewControllerPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPresentable.swift; sourceTree = "<group>"; };
+		B229EBAF1E77D1720086600E /* ViewControllerDismissable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDismissable.swift; sourceTree = "<group>"; };
+		B229EBB11E77D2370086600E /* ViewControllerPushable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPushable.swift; sourceTree = "<group>"; };
+		B229EBB41E77D30A0086600E /* ViewControllerTestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTestable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				B229EB961E77D0670086600E /* ViewControllerTestable.h */,
+				B229EBB41E77D30A0086600E /* ViewControllerTestable.swift */,
 				B229EB971E77D0670086600E /* Info.plist */,
+				B229EBB31E77D2C40086600E /* Dependence Injections */,
 			);
 			path = ViewControllerTestable;
 			sourceTree = "<group>";
@@ -84,6 +94,16 @@
 				B229EBA31E77D0670086600E /* Info.plist */,
 			);
 			path = ViewControllerTestableTests;
+			sourceTree = "<group>";
+		};
+		B229EBB31E77D2C40086600E /* Dependence Injections */ = {
+			isa = PBXGroup;
+			children = (
+				B229EBAD1E77D08F0086600E /* ViewControllerPresentable.swift */,
+				B229EBAF1E77D1720086600E /* ViewControllerDismissable.swift */,
+				B229EBB11E77D2370086600E /* ViewControllerPushable.swift */,
+			);
+			path = "Dependence Injections";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +169,7 @@
 					B229EB921E77D0670086600E = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = F6ANNS7CW7;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					B229EB9B1E77D0670086600E = {
@@ -198,6 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B229EBAE1E77D08F0086600E /* ViewControllerPresentable.swift in Sources */,
+				B229EBB21E77D2370086600E /* ViewControllerPushable.swift in Sources */,
+				B229EBB51E77D30A0086600E /* ViewControllerTestable.swift in Sources */,
+				B229EBB01E77D1720086600E /* ViewControllerDismissable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +347,7 @@
 		B229EBA81E77D0670086600E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F6ANNS7CW7;
@@ -334,6 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.boxuanzhang.ViewControllerTestable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +368,7 @@
 		B229EBA91E77D0670086600E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F6ANNS7CW7;
@@ -360,6 +388,7 @@
 		B229EBAB1E77D0670086600E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = F6ANNS7CW7;
 				INFOPLIST_FILE = ViewControllerTestableTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +401,7 @@
 		B229EBAC1E77D0670086600E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = F6ANNS7CW7;
 				INFOPLIST_FILE = ViewControllerTestableTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
