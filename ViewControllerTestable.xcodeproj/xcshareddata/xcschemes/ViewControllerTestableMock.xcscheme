@@ -26,9 +26,29 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B22BE8A41E78A8C300D5C7B1"
+               BuildableName = "ViewControllerTestableMockTests.xctest"
+               BlueprintName = "ViewControllerTestableMockTests"
+               ReferencedContainer = "container:ViewControllerTestable.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B22BE89C1E78A8C300D5C7B1"
+            BuildableName = "ViewControllerTestableMock.framework"
+            BlueprintName = "ViewControllerTestableMock"
+            ReferencedContainer = "container:ViewControllerTestable.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

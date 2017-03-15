@@ -5,5 +5,7 @@ xcode_scheme:
     - ViewControllerTestable
     - ViewControllerTestableMock
 script:
-    - xcodebuild clean build -sdk iphonesimulator -project ViewControllerTestable.xcodeproj -scheme ViewControllerTestable
-    - xcodebuild clean build -sdk iphonesimulator -project ViewControllerTestable.xcodeproj -scheme ViewControllerTestableMock
+    - xcodebuild clean test -sdk iphonesimulator -scheme ViewControllerTestable -project ViewControllerTestable.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 7' -enableCodeCoverage YES
+    - xcodebuild clean test -sdk iphonesimulator -scheme ViewControllerTestableMock -project ViewControllerTestable.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 7' -enableCodeCoverage YES
+after_success:
+    - bash <(curl -s https://codecov.io/bash)
