@@ -7,3 +7,5 @@ xcode_scheme:
 script:
     - xcodebuild clean build -sdk iphonesimulator -project ViewControllerTestable.xcodeproj -scheme ViewControllerTestable
     - xcodebuild clean build -sdk iphonesimulator -project ViewControllerTestable.xcodeproj -scheme ViewControllerTestableMock
+after_success:
+     - bash <(curl -s https://codecov.io/bash)
