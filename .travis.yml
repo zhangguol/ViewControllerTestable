@@ -1,0 +1,9 @@
+language: objective-c
+osx_image: xcode8.2
+xcode_project: ViewControllerTestable.xcodeproj
+xcode_scheme:
+    - ViewControllerTestable
+    - ViewControllerTestableMock
+script:
+    - xcodebuild clean build -sdk iphonesimulator -project ViewControllerTestable.xcodeproj -scheme ViewControllerTestable
+    - xcodebuild clean build -sdk iphonesimulator -project ViewControllerTestable.xcodeproj -scheme ViewControllerTestableMock
