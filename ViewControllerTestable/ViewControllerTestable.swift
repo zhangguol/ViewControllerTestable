@@ -8,16 +8,16 @@
 
 import Foundation
 
-protocol ViewControllerTestable {
+public protocol ViewControllerTestable {
     var viewControllerPresenter: ViewControllerPresentable { get set }
     var viewControllerDismisser: ViewControllerDismissable { get set }
     var viewControllerPusher: ViewControllerPushable { get set }
 }
 
-extension ViewControllerTestable where Self: UIViewController {
+public extension ViewControllerTestable where Self: UIViewController {
     
     
-    var viewControllerPresenter: ViewControllerPresentable {
+    public var viewControllerPresenter: ViewControllerPresentable {
         get {
             let presenter = objc_getAssociatedObject(self,
                                                      RuntimeKey.presentKey) as? ViewControllerPresentable
@@ -32,7 +32,7 @@ extension ViewControllerTestable where Self: UIViewController {
         }
     }
     
-    var viewControllerDismisser: ViewControllerDismissable {
+    public var viewControllerDismisser: ViewControllerDismissable {
         get {
             let dismisser = objc_getAssociatedObject(self,
                                                      RuntimeKey.dismissKey) as? ViewControllerDismissable
@@ -41,13 +41,13 @@ extension ViewControllerTestable where Self: UIViewController {
         
         set {
             objc_setAssociatedObject(self,
-                                     RuntimeKey.presentKey,
+                                     RuntimeKey.dismissKey,
                                      newValue,
                                      objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
     
-    var viewControllerPusher: ViewControllerPushable {
+    public var viewControllerPusher: ViewControllerPushable {
         get {
             let pusher = objc_getAssociatedObject(self,
                                                   RuntimeKey.pushKey) as? ViewControllerPushable

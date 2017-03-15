@@ -8,18 +8,20 @@
 
 import Foundation
 
-protocol ViewControllerPresentable {
+public protocol ViewControllerPresentable {
     func present(_ viewController: UIViewController,
                  from aViewController: UIViewController,
                  animated: Bool,
                  completion: (() -> Void)?)
 }
 
-class ViewControllerPresenter: ViewControllerPresentable {
+public class ViewControllerPresenter: ViewControllerPresentable {
+
+    public init() {}
     
-    static let shared = ViewControllerPresenter()
+    public static let shared = ViewControllerPresenter()
     
-    func present(_ viewController: UIViewController,
+    public func present(_ viewController: UIViewController,
                  from aViewController: UIViewController,
                  animated: Bool,
                  completion: (() -> Void)?) {

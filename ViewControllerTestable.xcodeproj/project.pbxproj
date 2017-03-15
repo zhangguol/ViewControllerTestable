@@ -14,6 +14,11 @@
 		B229EBB01E77D1720086600E /* ViewControllerDismissable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B229EBAF1E77D1720086600E /* ViewControllerDismissable.swift */; };
 		B229EBB21E77D2370086600E /* ViewControllerPushable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B229EBB11E77D2370086600E /* ViewControllerPushable.swift */; };
 		B229EBB51E77D30A0086600E /* ViewControllerTestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B229EBB41E77D30A0086600E /* ViewControllerTestable.swift */; };
+		B22BE8A61E78A8C300D5C7B1 /* ViewControllerTestableMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22BE89D1E78A8C300D5C7B1 /* ViewControllerTestableMock.framework */; };
+		B22BE8AB1E78A8C300D5C7B1 /* ViewControllerTestableMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BE8AA1E78A8C300D5C7B1 /* ViewControllerTestableMockTests.swift */; };
+		B22BE8AD1E78A8C300D5C7B1 /* ViewControllerTestableMock.h in Headers */ = {isa = PBXBuildFile; fileRef = B22BE89F1E78A8C300D5C7B1 /* ViewControllerTestableMock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B22BE8B51E78A94200D5C7B1 /* VIewControllerTestableMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BE8B41E78A94200D5C7B1 /* VIewControllerTestableMocks.swift */; };
+		B22BE8B61E78A95700D5C7B1 /* ViewControllerTestable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B229EB931E77D0670086600E /* ViewControllerTestable.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +28,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = B229EB921E77D0670086600E;
 			remoteInfo = ViewControllerTestable;
+		};
+		B22BE8A71E78A8C300D5C7B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B229EB8A1E77D0670086600E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B22BE89C1E78A8C300D5C7B1;
+			remoteInfo = ViewControllerTestableMock;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -37,6 +49,13 @@
 		B229EBAF1E77D1720086600E /* ViewControllerDismissable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDismissable.swift; sourceTree = "<group>"; };
 		B229EBB11E77D2370086600E /* ViewControllerPushable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPushable.swift; sourceTree = "<group>"; };
 		B229EBB41E77D30A0086600E /* ViewControllerTestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTestable.swift; sourceTree = "<group>"; };
+		B22BE89D1E78A8C300D5C7B1 /* ViewControllerTestableMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewControllerTestableMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B22BE89F1E78A8C300D5C7B1 /* ViewControllerTestableMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerTestableMock.h; sourceTree = "<group>"; };
+		B22BE8A01E78A8C300D5C7B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B22BE8A51E78A8C300D5C7B1 /* ViewControllerTestableMockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerTestableMockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B22BE8AA1E78A8C300D5C7B1 /* ViewControllerTestableMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTestableMockTests.swift; sourceTree = "<group>"; };
+		B22BE8AC1E78A8C300D5C7B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B22BE8B41E78A94200D5C7B1 /* VIewControllerTestableMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIewControllerTestableMocks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +74,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B22BE8991E78A8C300D5C7B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B22BE8B61E78A95700D5C7B1 /* ViewControllerTestable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B22BE8A21E78A8C300D5C7B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B22BE8A61E78A8C300D5C7B1 /* ViewControllerTestableMock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +98,8 @@
 			children = (
 				B229EB951E77D0670086600E /* ViewControllerTestable */,
 				B229EBA01E77D0670086600E /* ViewControllerTestableTests */,
+				B22BE89E1E78A8C300D5C7B1 /* ViewControllerTestableMock */,
+				B22BE8A91E78A8C300D5C7B1 /* ViewControllerTestableMockTests */,
 				B229EB941E77D0670086600E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +109,8 @@
 			children = (
 				B229EB931E77D0670086600E /* ViewControllerTestable.framework */,
 				B229EB9C1E77D0670086600E /* ViewControllerTestableTests.xctest */,
+				B22BE89D1E78A8C300D5C7B1 /* ViewControllerTestableMock.framework */,
+				B22BE8A51E78A8C300D5C7B1 /* ViewControllerTestableMockTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,8 +120,8 @@
 			children = (
 				B229EB961E77D0670086600E /* ViewControllerTestable.h */,
 				B229EBB41E77D30A0086600E /* ViewControllerTestable.swift */,
-				B229EB971E77D0670086600E /* Info.plist */,
 				B229EBB31E77D2C40086600E /* Dependence Injections */,
+				B229EB971E77D0670086600E /* Info.plist */,
 			);
 			path = ViewControllerTestable;
 			sourceTree = "<group>";
@@ -106,6 +145,25 @@
 			path = "Dependence Injections";
 			sourceTree = "<group>";
 		};
+		B22BE89E1E78A8C300D5C7B1 /* ViewControllerTestableMock */ = {
+			isa = PBXGroup;
+			children = (
+				B22BE89F1E78A8C300D5C7B1 /* ViewControllerTestableMock.h */,
+				B22BE8B41E78A94200D5C7B1 /* VIewControllerTestableMocks.swift */,
+				B22BE8A01E78A8C300D5C7B1 /* Info.plist */,
+			);
+			path = ViewControllerTestableMock;
+			sourceTree = "<group>";
+		};
+		B22BE8A91E78A8C300D5C7B1 /* ViewControllerTestableMockTests */ = {
+			isa = PBXGroup;
+			children = (
+				B22BE8AA1E78A8C300D5C7B1 /* ViewControllerTestableMockTests.swift */,
+				B22BE8AC1E78A8C300D5C7B1 /* Info.plist */,
+			);
+			path = ViewControllerTestableMockTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -114,6 +172,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B229EBA41E77D0670086600E /* ViewControllerTestable.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B22BE89A1E78A8C300D5C7B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B22BE8AD1E78A8C300D5C7B1 /* ViewControllerTestableMock.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +222,42 @@
 			productReference = B229EB9C1E77D0670086600E /* ViewControllerTestableTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B22BE89C1E78A8C300D5C7B1 /* ViewControllerTestableMock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B22BE8AE1E78A8C300D5C7B1 /* Build configuration list for PBXNativeTarget "ViewControllerTestableMock" */;
+			buildPhases = (
+				B22BE8981E78A8C300D5C7B1 /* Sources */,
+				B22BE8991E78A8C300D5C7B1 /* Frameworks */,
+				B22BE89A1E78A8C300D5C7B1 /* Headers */,
+				B22BE89B1E78A8C300D5C7B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViewControllerTestableMock;
+			productName = ViewControllerTestableMock;
+			productReference = B22BE89D1E78A8C300D5C7B1 /* ViewControllerTestableMock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B22BE8A41E78A8C300D5C7B1 /* ViewControllerTestableMockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B22BE8B11E78A8C300D5C7B1 /* Build configuration list for PBXNativeTarget "ViewControllerTestableMockTests" */;
+			buildPhases = (
+				B22BE8A11E78A8C300D5C7B1 /* Sources */,
+				B22BE8A21E78A8C300D5C7B1 /* Frameworks */,
+				B22BE8A31E78A8C300D5C7B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B22BE8A81E78A8C300D5C7B1 /* PBXTargetDependency */,
+			);
+			name = ViewControllerTestableMockTests;
+			productName = ViewControllerTestableMockTests;
+			productReference = B22BE8A51E78A8C300D5C7B1 /* ViewControllerTestableMockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,6 +279,17 @@
 						DevelopmentTeam = F6ANNS7CW7;
 						ProvisioningStyle = Automatic;
 					};
+					B22BE89C1E78A8C300D5C7B1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = F6ANNS7CW7;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					B22BE8A41E78A8C300D5C7B1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = F6ANNS7CW7;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = B229EB8D1E77D0670086600E /* Build configuration list for PBXProject "ViewControllerTestable" */;
@@ -193,6 +306,8 @@
 			targets = (
 				B229EB921E77D0670086600E /* ViewControllerTestable */,
 				B229EB9B1E77D0670086600E /* ViewControllerTestableTests */,
+				B22BE89C1E78A8C300D5C7B1 /* ViewControllerTestableMock */,
+				B22BE8A41E78A8C300D5C7B1 /* ViewControllerTestableMockTests */,
 			);
 		};
 /* End PBXProject section */
@@ -206,6 +321,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B229EB9A1E77D0670086600E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B22BE89B1E78A8C300D5C7B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B22BE8A31E78A8C300D5C7B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -234,6 +363,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B22BE8981E78A8C300D5C7B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B22BE8B51E78A94200D5C7B1 /* VIewControllerTestableMocks.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B22BE8A11E78A8C300D5C7B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B22BE8AB1E78A8C300D5C7B1 /* ViewControllerTestableMockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -241,6 +386,11 @@
 			isa = PBXTargetDependency;
 			target = B229EB921E77D0670086600E /* ViewControllerTestable */;
 			targetProxy = B229EB9E1E77D0670086600E /* PBXContainerItemProxy */;
+		};
+		B22BE8A81E78A8C300D5C7B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B22BE89C1E78A8C300D5C7B1 /* ViewControllerTestableMock */;
+			targetProxy = B22BE8A71E78A8C300D5C7B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -411,6 +561,73 @@
 			};
 			name = Release;
 		};
+		B22BE8AF1E78A8C300D5C7B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F6ANNS7CW7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ViewControllerTestableMock/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ViewControllerTestableMock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B22BE8B01E78A8C300D5C7B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F6ANNS7CW7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ViewControllerTestableMock/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ViewControllerTestableMock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B22BE8B21E78A8C300D5C7B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = F6ANNS7CW7;
+				INFOPLIST_FILE = ViewControllerTestableMockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ViewControllerTestableMockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B22BE8B31E78A8C300D5C7B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = F6ANNS7CW7;
+				INFOPLIST_FILE = ViewControllerTestableMockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ViewControllerTestableMockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -430,12 +647,30 @@
 				B229EBA91E77D0670086600E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B229EBAA1E77D0670086600E /* Build configuration list for PBXNativeTarget "ViewControllerTestableTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B229EBAB1E77D0670086600E /* Debug */,
 				B229EBAC1E77D0670086600E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B22BE8AE1E78A8C300D5C7B1 /* Build configuration list for PBXNativeTarget "ViewControllerTestableMock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B22BE8AF1E78A8C300D5C7B1 /* Debug */,
+				B22BE8B01E78A8C300D5C7B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B22BE8B11E78A8C300D5C7B1 /* Build configuration list for PBXNativeTarget "ViewControllerTestableMockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B22BE8B21E78A8C300D5C7B1 /* Debug */,
+				B22BE8B31E78A8C300D5C7B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

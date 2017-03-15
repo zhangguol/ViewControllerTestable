@@ -8,17 +8,19 @@
 
 import Foundation
 
-protocol ViewControllerDismissable {
+public protocol ViewControllerDismissable {
     func dismiss(_ viewController: UIViewController,
                  animated: Bool,
                  completion: (() -> Void)?)
 }
 
-class ViewControllerDismisser: ViewControllerDismissable {
+public class ViewControllerDismisser: ViewControllerDismissable {
     
-    static let shared = ViewControllerDismisser()
+    public init() {}
     
-    func dismiss(_ viewController: UIViewController,
+    public static let shared = ViewControllerDismisser()
+    
+    public func dismiss(_ viewController: UIViewController,
                  animated: Bool,
                  completion: (() -> Void)?) {
         

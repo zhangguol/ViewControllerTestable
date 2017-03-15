@@ -8,17 +8,19 @@
 
 import Foundation
 
-protocol ViewControllerPushable {
+public protocol ViewControllerPushable {
     func push(_ viewController: UIViewController,
               in navigationControler: UINavigationController,
               animated: Bool)
 }
 
-class ViewControllerPusher: ViewControllerPushable {
+public class ViewControllerPusher: ViewControllerPushable {
     
-    static let shared = ViewControllerPusher()
+    public init() {}
     
-    func push(_ viewController: UIViewController,
+    public static let shared = ViewControllerPusher()
+    
+    public func push(_ viewController: UIViewController,
               in navigationControler: UINavigationController,
               animated: Bool) {
         
