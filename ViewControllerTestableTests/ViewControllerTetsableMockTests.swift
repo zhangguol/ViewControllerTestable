@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import ViewControllerTestableMock
+@testable import ViewControllerTestable
 
 class ViewControllerTetsableMockTests: XCTestCase {
     var vc1: UIViewController!
