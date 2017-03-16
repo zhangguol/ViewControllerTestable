@@ -1,5 +1,6 @@
 # ViewControllerTestable
-
+[![Travis branch](https://img.shields.io/travis/zhangguol/ViewControllerTestable/master.svg?style=flat-square)](https://travis-ci.org/zhangguol/ViewControllerTestable)
+[![Codecov branch](https://img.shields.io/codecov/c/github/zhangguol/ViewControllerTestable/master.svg?style=flat-square)](https://codecov.io/gh/zhangguol/ViewControllerTestable)
 ## What is it?
 ViewControllerTestable is an extension to make a `UIViewController` testable with `present`, `dismiss`, and `push`
 
@@ -15,13 +16,13 @@ You need to `import UIViewControllerTestable` at first.
 
 To make a `UIViewController` testable, just make it implement `UIViewControllerTestable` protocol
 
-```
+```swift
 extension DemoUIViewController: UIViewControllerTestable {}
 ```
 
 Then use
 
-```
+```swift
 func present(_ viewController: UIViewController,
              from aViewController: UIViewController,
              animated: Bool,
@@ -29,7 +30,7 @@ func present(_ viewController: UIViewController,
 ```
 to present a view controller. Or use
 
-```
+```swift
 func dismiss(_ viewController: UIViewController,
              animated: Bool,
              completion: (() -> Void)?)
@@ -37,7 +38,7 @@ func dismiss(_ viewController: UIViewController,
 ```
 to dismiss a view controller. Also can use
 
-```
+```swift
 func push(_ viewController: UIViewController,
           in navigationControler: UINavigationController,
           animated: Bool)
@@ -46,10 +47,15 @@ to push a view controller into a `UINavigationController`
 
 ### How to test a view controller
 
-In the test case class, `import ViewControllerTestableMock` at first. Then set the view controller's `viewControllerPresent` to an instance of `MockViewControllerPresenter`
+Set the view controller's `viewControllerPresent` to an instance of `MockViewControllerPresenter`
 
-```
+```swift
 let mockPresenter = MockViewControllerPresenter()
 viewController.viewControllerPresenter = mockPresenter
 ```
+
+## Other
+
+### License
+ViewControllerTestable is released under the MIT license. See [LICENSE](./LICENSE) for details.
 
