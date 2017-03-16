@@ -6,6 +6,5 @@ xcode_scheme:
     - ViewControllerTestableMock
 script:
     - xcodebuild clean test -sdk iphonesimulator -scheme ViewControllerTestable -project ViewControllerTestable.xcodeproj -destination 'id=22FA2149-1241-469C-BF6D-462D3837DB72' -enableCodeCoverage YES CODE_SIGNING_REQUIRED=NO
-    - xcodebuild clean test -sdk iphonesimulator -scheme ViewControllerTestableMock -project ViewControllerTestable.xcodeproj -destination 'id=22FA2149-1241-469C-BF6D-462D3837DB72' -enableCodeCoverage YES CODE_SIGNING_REQUIRED=NO
 after_success:
     - bash <(curl -s https://codecov.io/bash)
