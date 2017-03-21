@@ -1,12 +1,28 @@
 # ViewControllerTestable
 [![Travis branch](https://img.shields.io/travis/zhangguol/ViewControllerTestable/master.svg?style=flat-square)](https://travis-ci.org/zhangguol/ViewControllerTestable)
 [![Codecov branch](https://img.shields.io/codecov/c/github/zhangguol/ViewControllerTestable/master.svg?style=flat-square)](https://codecov.io/gh/zhangguol/ViewControllerTestable)
+[![license](https://img.shields.io/github/license/zhangguol/ViewControllerTestable.svg?style=flat-square)](./LICENSE)
 ## What is it?
 ViewControllerTestable is an extension to make a `UIViewController` testable with `present`, `dismiss`, and `push`
 
 ## Requirements
 - iOS 10.0+
 - Swift 3
+
+## Installation
+
+### CocoaPods
+
+Add the following to your Podfile.
+
+```
+pod "ViewControllerTestable", `~> 0.1.2`
+```
+
+### Git Submodule
+```
+git submodule add https://github.com/zhangguol/ViewControllerTestable
+```
 
 ## Usage
 

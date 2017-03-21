@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ViewControllerTestable"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "An extension to make a view controller easy to test"
 
   # This description is used to generate tags and improve search results.
